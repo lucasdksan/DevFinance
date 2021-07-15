@@ -1,0 +1,159 @@
+#balance{
+    margin-top: -8rem;
+}
+#balance h2{
+    color: #fff;
+    margin-top: 0;
+}
+#transaction{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+#data-table{
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: #969cb3;
+}
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+a{
+    color: #49aa26;
+    text-decoration: none;
+}
+a:hover{
+    color: #3dd705;
+}
+.button.new{
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+.button-delete:hover{
+    cursor: pointer;
+}
+table tbody tr{
+    opacity: 0.7;
+}
+table tbody tr:hover{
+    opacity: 1;
+}
+table th{
+    background-color: #fff;
+    font-weight: normal;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+table td{
+    background-color: #fff;
+    padding: 1rem 2rem;
+    font-weight: normal;
+}
+table thead tr td:first-child,
+table tbody tr td:first-child{
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+table thead tr td:last-child,
+table tbody tr td:last-child{
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+td.description{
+    color: #363f5f;
+}
+td.income{
+    color: #12a454;
+}
+td.expense{
+    color: #e92929;
+}
+@media(min-width: 800px){
+    #balance{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+}
+.modal-overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal{
+    background-color: #f0f2f5;
+    padding: 2.4rem;
+    position: relative;
+    z-index: 1;
+}
+#form{
+    max-width: 500px;
+}
+#form h2{
+    margin-top: 0;
+}
+input{
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+.input-group{
+    margin-top: 0.8rem;
+}
+.input-group small{
+    opacity: 0.4;
+}
+.input-group.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-group.actions .button,
+.input-group.actions button{
+    width: 48%;   
+}
+button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background-color: #49aa26;
+    padding: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #3dd705;
+}
+.button.cancel{
+    color: #e92929;
+    border: 2px #e92929 solid;
+    border-radius: 0.25rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+.button.cancel:hover{
+    opacity: 1;
+}

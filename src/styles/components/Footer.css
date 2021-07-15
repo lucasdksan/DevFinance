@@ -1,0 +1,9 @@
+footer{
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: #363f5f;
+    opacity: 0.6;
+}
