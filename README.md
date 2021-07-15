@@ -18,3 +18,5 @@ Outro ponto deste projeto é a sua capacidade de responsividade representada pel
 ![Intro](README/Main2.png)
 
 A próxima imagem contém a tabela com elementos já posicionados.
+
+![Intro](README/End.png)
